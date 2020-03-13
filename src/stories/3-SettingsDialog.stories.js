@@ -7,6 +7,6 @@ export default {
   component: SettingsDialog,
 };
 
-export const DefaultTextBox = () => (
+export const DefaultDialogView = () => (
   <SettingsDialog />
 );
