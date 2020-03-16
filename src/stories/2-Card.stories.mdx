@@ -1,0 +1,51 @@
+import { action } from '@storybook/addon-actions';
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+
+import Card from '../components/Card.js';
+
+<Meta title="Card" component={Card} />
+
+# Card
+### Example Card element and stories.
+
+The `Card` element is used to create a full width text box with customizable background and text colors.
+
+<Preview>
+  <Story name="Basic Test" height="50px">
+    <Card content="This is a test" />
+  </Story>
+</Preview>
+
+By default when passed a string through the `content` property, the card will render as black text on a white background.
+
+## Props
+
+<Props of={Card} />
+
+The `color` property defines what color to set the background of the card to. Formats can incude either a css color names`white` or HEX code`#FFFFFF`.
+
+The `text` property defines what color to set the text of the card to. Formats can include either a css color names`black` or HEX code`#000000`.
+
+The `content` property defines what text to display in the card.
+
+## Additional Stories
+
+<Preview>
+  <Story name="Color Background" height="50px">
+    <Card content="This background is light blue" color="#BBDDFF" />
+  </Story>
+</Preview>
+
+When passed a HEX Code `#BBDDFF` or CSS Color Code `lightBlue` through the `color` property, the card will render with the newly selected background color.
+
+<Preview>
+  <Story name="Color Text" height="50px">
+    <Card content="This text is light blue" text="#BBDDFF" />
+  </Story>
+</Preview>
+
+When passed a HEX Code `#BBDDFF` or CSS Color Code `lightBlue` through the `text` property, the card will render with the newly selected font color.
+
+```js live=true
+alert('test');
+```

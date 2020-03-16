@@ -1,0 +1,29 @@
+import { action } from '@storybook/addon-actions';
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+
+import SettingsDialog from '../components/SettingsDialog.js';
+
+<Meta title="Settings Dialog Box" component={SettingsDialog} />
+
+# Settings Dialog Box
+### Button to trigger modal to open containing settings panes.
+
+Use `SettingsDialog` to render a gear icon button that when clicked opens a modal view containing various settings panes.
+
+<Preview>
+  <Story name="Default Dialog View" height="50px">
+    <SettingsDialog />
+  </Story>
+</Preview>
+
+By default when passed a string through the `content` property, the card will render as black text on a white background.
+
+## Props
+
+<Props of={SettingsDialog} />
+
+The SettingsDialog element has no properties that it takes in.
+
+## Additional Stories
+
+No aditional stories for the SettingsDialog element.
