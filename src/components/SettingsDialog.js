@@ -23,11 +23,6 @@ import PropTypes from 'prop-types';
 
 function SettingsDialog() {
   SettingsDialog.propTypes = {
-    status: PropTypes.oneOf(['positive', 'negative', 'neutral']),
-  }
-
-  SettingsDialog.defaultProps = {
-    status: 'neutral',
   }
 
   const [open, setOpen] = React.useState(false);
