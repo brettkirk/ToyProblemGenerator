@@ -1,12 +1,19 @@
-import { action } from '@storybook/addon-actions';
+<!-- Story features -->
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from '@storybook/addon-a11y';
+import { action } from '@storybook/addon-actions';
 
+<!-- Components -->
 import SettingsDialog from '../components/SettingsDialog.js';
 import ColorSettings from '../components/ColorSettings.js';
 import CodeSettings from '../components/CodeSettings.js';
 import ToyProblemSettings from '../components/ToyProblemSettings.js';
 
-<Meta title="Settings Dialog Box" component={SettingsDialog} />
+<Meta 
+  title="Settings Dialog Box" 
+  component={SettingsDialog} 
+  decorators={[withA11y]}
+/>
 
 # Settings Dialog Box
 ### Button to trigger modal to open containing settings panes.

@@ -41,7 +41,7 @@ function CodeSettings() {
       <Typography>Known Languages</Typography>
       <FormGroup row>
         <Grid container spacing={0}>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -54,7 +54,7 @@ function CodeSettings() {
               label="C++"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -67,7 +67,7 @@ function CodeSettings() {
               label="C#"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -80,7 +80,7 @@ function CodeSettings() {
               label="Objective-C"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -93,7 +93,7 @@ function CodeSettings() {
               label="COBOL"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -106,7 +106,7 @@ function CodeSettings() {
               label="FORTRAN"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -119,7 +119,7 @@ function CodeSettings() {
               label="golang"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -132,7 +132,7 @@ function CodeSettings() {
               label="Java"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -145,7 +145,7 @@ function CodeSettings() {
               label="JavaScript"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -158,7 +158,7 @@ function CodeSettings() {
               label="Kotlin"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -171,7 +171,7 @@ function CodeSettings() {
               label="Perl"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -184,7 +184,7 @@ function CodeSettings() {
               label="PHP"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -197,7 +197,7 @@ function CodeSettings() {
               label="Python"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -210,7 +210,7 @@ function CodeSettings() {
               label="Ruby"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -223,7 +223,7 @@ function CodeSettings() {
               label="Rust"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -236,7 +236,7 @@ function CodeSettings() {
               label="Scala"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -249,7 +249,7 @@ function CodeSettings() {
               label="Swift"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 
@@ -262,7 +262,7 @@ function CodeSettings() {
               label="TypeScript"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={6} sm={4}>
             <FormControlLabel
               control={
                 <Checkbox 

@@ -1,9 +1,13 @@
-import { action } from '@storybook/addon-actions';
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from '@storybook/addon-a11y';
 
 import Card from '../components/Card.js';
 
-<Meta title="Card" component={Card} />
+<Meta 
+  title="Card" 
+  component={Card} 
+  decorators={[withA11y]}
+/>
 
 # Card
 ### Example Card element and stories.

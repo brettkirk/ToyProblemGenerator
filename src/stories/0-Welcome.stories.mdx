@@ -1,0 +1,26 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from '@storybook/addon-a11y';
+
+import Welcome from './Welcome';
+
+<Meta 
+  title="Welcome" 
+  component={Welcome} 
+  decorators={[withA11y]}
+/>
+
+<Preview>
+  <Story name="To The TPG Storybook" height="405px">
+    <Welcome />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Welcome} />
+
+The Welcome element has no properties that it takes in.
+
+## Additional Stories
+
+No aditional stories for the Welcome element.
