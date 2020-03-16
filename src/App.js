@@ -34,12 +34,12 @@ function App() {
           <Container maxWidth="lg">
             <Paper style={{height: '100vh'}}>
               <Grid container spacing={0} justify="space-between">
-                <Grid item xs={0} />
-                <Grid item xs={0}>
+                <Grid item xs={true} />
+                <Grid item xs={false}>
                   <SettingsDialog />
                 </Grid>
               </Grid>
-              <Typography variant="h3" align="center" gutterBottom="true">Toy Problem Generator</Typography>
+              <Typography variant="h3" align="center" gutterBottom={true}>Toy Problem Generator</Typography>
               <Input placeholder="Test"></Input>
             </Paper>
           </Container>
