@@ -1,14 +1,7 @@
+// React / related dependencies
 import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-// import useMediaQuery from '@material-ui/core/useMediaQuery';
-// import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
-// import Input from '@material-ui/core/Input';
-// import Grid from '@material-ui/core/Grid';
-// import Container from '@material-ui/core/Container';
-// import Paper from '@material-ui/core/Paper';
-// import Typography from '@material-ui/core/Typography';
+// MUI elements
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Dialog from '@material-ui/core/Dialog';
@@ -17,13 +10,26 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
+// Icons
 import SettingsIcon from '@material-ui/icons/Settings';
 
+// Custom Elements
 import ColorSettings from './ColorSettings.js';
 import CodeSettings from './CodeSettings.js';
 import ToyProblemSettings from './ToyProblemSettings.js';
 
+// PropTypes definition
+import PropTypes from 'prop-types';
+
 function SettingsDialog() {
+  SettingsDialog.propTypes = {
+    status: PropTypes.oneOf(['positive', 'negative', 'neutral']),
+  }
+
+  SettingsDialog.defaultProps = {
+    status: 'neutral',
+  }
+
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = scrollType => () => {
@@ -45,7 +51,7 @@ function SettingsDialog() {
   }, [open]);
 
   return (
-    <div>
+    <div data-testid="settings-button">
       <IconButton onClick={handleClickOpen()} aria-label="settings">
         <SettingsIcon />
       </IconButton>
