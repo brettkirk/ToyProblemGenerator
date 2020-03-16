@@ -1,4 +1,7 @@
+// React / related dependencies
 import React from 'react';
+
+// MUI elements
 import Input from '@material-ui/core/Input';
 
 function TextBox(props) {

@@ -1,4 +1,7 @@
+// React / related dependencies
 import React from 'react';
+
+// MUI elements
 import Paper from '@material-ui/core/Paper';
 
 // PropTypes definition

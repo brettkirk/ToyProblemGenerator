@@ -1,6 +1,8 @@
+// React / related dependencies
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
+// MUI elements
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
@@ -25,12 +27,6 @@ function ToyProblemSettings() {
   const classes = useStyles();
   const [gen, setGen] = React.useState('Predefined');
   const [dif, setDif] = React.useState('E');
-
-  const inputLabel = React.useRef(null);
-  const [labelWidth, setLabelWidth] = React.useState(0);
-  // React.useEffect(() => {
-  //   setLabelWidth(inputLabel.current.offsetWidth);
-  // }, []);
 
   const handleGenChange = event => {
     setGen(event.target.value);

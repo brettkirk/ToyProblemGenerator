@@ -1,18 +1,17 @@
+// React / related dependencies
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
+// MUI elements
 import Input from '@material-ui/core/Input';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-// import Button from '@material-ui/core/Button';
 
-import SettingsIcon from '@material-ui/icons/Settings';
-
+// Custom elements
 import SettingsDialog from './components/SettingsDialog.js';
 
 function App() {
