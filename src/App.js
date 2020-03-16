@@ -34,8 +34,8 @@ function App() {
           <Container maxWidth="lg">
             <Paper style={{height: '100vh'}}>
               <Grid container spacing={0} justify="space-between">
-                <Grid item xs={true} />
-                <Grid item xs={false}>
+                <Grid item />
+                <Grid item>
                   <SettingsDialog />
                 </Grid>
               </Grid>
