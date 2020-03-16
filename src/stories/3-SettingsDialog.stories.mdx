@@ -2,6 +2,9 @@ import { action } from '@storybook/addon-actions';
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 
 import SettingsDialog from '../components/SettingsDialog.js';
+import ColorSettings from '../components/ColorSettings.js';
+import CodeSettings from '../components/CodeSettings.js';
+import ToyProblemSettings from '../components/ToyProblemSettings.js';
 
 <Meta title="Settings Dialog Box" component={SettingsDialog} />
 
@@ -25,5 +28,29 @@ By default when passed a string through the `content` property, the card will re
 The SettingsDialog element has no properties that it takes in.
 
 ## Additional Stories
+
+### Color Settings Sub-Element
+
+<Preview>
+  <Story name="Color Settings View" height="150px">
+    <ColorSettings />
+  </Story>
+</Preview>
+
+### Code Settings Sub-Element
+
+<Preview>
+  <Story name="Code Settings View" height="300px">
+    <CodeSettings />
+  </Story>
+</Preview>
+
+### Toy Problems Settings Sub-Element
+
+<Preview>
+  <Story name="Toy Problem Settings View" height="210px">
+    <ToyProblemSettings />
+  </Story>
+</Preview>
 
 No aditional stories for the SettingsDialog element.
